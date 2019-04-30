@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    tools:context="com.example.ryan.electronicstore.ProductList">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/searchBar"
+        android:layout_alignParentTop="true"
+        app:mt_speechMode="false"
+        app:mt_hint="Enter product" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/searchBar"
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:id="@+id/recycler_product"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="520dp" />
+
+
+</RelativeLayout>
